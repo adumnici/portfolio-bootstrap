@@ -1,3 +1,11 @@
-.root {
-    /* background-color: #04080F; */
+.name, .title, .prj{
+    text-align: center;
+}
+
+.contact{
+    max-height: 1000px;
+}
+
+.root{
+    padding-top: 5%;
 }

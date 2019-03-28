@@ -7,49 +7,47 @@
     <link rel="stylesheet" href="index.css">
     <title>Adrian Dumnici - Web Developer</title>
 </head>
-<body class="root">
+<body class="root" id="root">
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <button type="button" class="btn btn-primary">AD</button>
-            </div>
-            <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                        <a class="navbar-brand" href="#root">AD</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#root">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
-                        </ul>
-                    </div>
-                </nav>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </nav>
             </div>
         </div>
-        <div class="row">
+        <div class="row name" id="home">
             <div class="col">
-                Name
+                Adi Dumnici
             </div>
         </div>
-        <div class="row">
+        <div class="row title">
             <div class="col">
-                    Title
+                    Web Developer
             </div>
         </div>
-        <div class="row">
+        <div class="row prj">
             <div class="col">
-                    Projects/About button
+                <button type="button" class="btn btn-outline-primary">Projects</button>
             </div>
         </div>
         <div class="row">
@@ -57,31 +55,48 @@
                 Projects
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                Smart Brain
-            </div>
-            <div class="col">
-                Rock paper
-            </div>
-            <div class="col">
-                Desirious
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                About si button CV
-            </div>
-            <div class="col">
-                Stuff I know
+        <div class="row" id=projects>
+            <div class="col d-flex flex-wrap">
+                <div class="card" style="width: 18rem;">
+                    <img src="smart-brain-background.png" class="card-img-top" alt="Picture of Computer Vision App">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="desirous-background.png" class="card-img-top" alt="Picture of Desirious App">
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="rps-game-background.png" class="card-img-top" alt="Picture of Rock Paper Scissors App">
+                </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row d-flex flex-wrap" id="about">
             <div class="col">
-                Want to contact
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus ipsam alias laborum vero in? Atque ipsum quos animi eius, natus voluptatum officiis optio nam? Reprehenderit, velit? Ipsum, expedita ipsam.
             </div>
             <div class="col">
-                contact form
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, aut? Explicabo atque repellat odio pariatur, mollitia, nemo dolore, maxime provident cum eligendi dolores id? Porro asperiores impedit repellat maiores alias!
+            </div>
+        </div>
+        <div class="row d-flex flex-wrap" id="contact">
+            <div class="col contact">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, ipsa quo quod obcaecati perspiciatis explicabo quia beatae earum maiores similique ut odio ipsam exercitationem nihil placeat sapiente? Quos, facere! Reiciendis.
+            </div>
+            <div class="col contact">
+                <form action="mailto:adriandumnici@yahoo.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="nameInput"></label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                            <label for="emailInput"></label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="textAreaInput"></label>
+                        <textarea class="form-control" id="textAreaInput" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </form>
             </div>
         </div>
     </div>
