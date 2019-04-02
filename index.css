@@ -1,0 +1,23 @@
+.root{
+    background-color: #04080F;
+}
+
+.firstBtn:hover{
+    background-color: #66fCF1;
+}
+
+.navbar{
+    opacity: 0.4;
+}
+
+.linkH, .linkP, .linkA, .linkC{
+    opacity: 1;
+}
+
+.pic{
+    transition: .2s;
+}
+
+.pic:hover{
+    transform: scale(1.15);
+}
