@@ -13,11 +13,3 @@
 .linkH, .linkP, .linkA, .linkC{
     opacity: 1;
 }
-
-.pic{
-    transition: .2s;
-}
-
-.pic:hover{
-    transform: scale(1.15);
-}
